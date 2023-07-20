@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
@@ -50,30 +51,280 @@ ul {
         border-color: antiquewhite;
         border-style: dashed;
     }
+    #hero {
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+       margin-left: 300px;
+    
+   }
+
+    .left{
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        align-items: center;
+    }
+    h2{
+  font-size: 100px;
+  font-family:  Helvetica;
+  margin-top: 10px;
+    }
+    h3{
+        font-size: 50px;
+
+    }
+    #hero .hero-container {
+        position: relative;
+        z-index: 2;
+        padding-left: 0%;
+        min-width: 300px;
+      }
+      #hero h1 {
+        margin: 0 0 10px 0;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 56px;
+        color: lightgray;
+      }
+      #hero p {
+        color: lightgray;
+        margin-bottom: 50px;
+        font-size: 26px;
+        font-family: "Poppins", sans-serif;
+      }
+      #hero p span {
+        color: lightgray;
+        padding-bottom: 4px;
+        letter-spacing: 1px;
+        border-bottom: 3px solid #d69254;
+      }
+      @media (min-width: 1024px) {
+        #hero .hero-container {
+          padding-left: 12%;
+        }
+      
         #hero {
-            max-width: 95%;
+          background-attachment: fixed;
+        }
+      }
+      @media (max-width: 768px) {
+        #hero h1 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        #hero h2 {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+      }
+      section {
+        padding: 60px 0;
+        overflow: hidden;
+      }
+      
+      .section-bg {
+        background: #fafcff;
+      }
+      
+      .section-title {
+        padding-bottom: 30px;
+      }
+      .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #242124;
+      }
+      .section-title h2::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #d69254;
+        bottom: 0;
+        left: 0;
+      }
+      .section-title p {
+        margin-bottom: 0;
+      }
+      
+      /*--------------------------------------------------------------
+      # About
+      --------------------------------------------------------------*/
+      .about .content h3 {
+        font-weight: 700;
+        font-size: 26px;
+        color: #242124;
+      }
+      .about .content ul {
+        list-style: none;
+        padding: 0;
+      }
+      .about .content ul li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .about .content ul strong {
+        margin-right: 10px;
+      }
+      .about .content ul i {
+        font-size: 16px;
+        margin-right: 5px;
+        color: #d69254;
+        line-height: 0;
+      }
+      .about .content p:last-child {
+        margin-bottom: 0;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      
+      label {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      textarea {
+        height: 150px;
+      }
+      
+      button {
+        padding: 10px 20px;
+        background-color: #d69254;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      button:hover {
+        background-color: #ab6b51;
+      }
+      
+      /* Responsiveness for smaller screens */
+      
+      @media (max-width: 768px) {
+        .section-container {
+          padding: 20px;
+        }
+      }
+      
+      @media (max-width: 500px) {
+        form {
+          max-width: 100%;
+          padding: 0 20px;
+        }
+      }
+      #services,
+      #contact,
+      #about {
+            max-width: 80%;
             margin: 0 auto;
             margin-top: 24px;
-            background-color:lightgray;
+            background-color: lightgrey;
             padding: 20px;
-            border-radius: 40px;
+            border-radius: 20px;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            height: 300px;
-            border-style: groove;
-            border-color: brown;
-       }
+        }
 
-        .left{
+        
+      
+      
+      .section-container {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: #333;
+      }
+      
+      p {
+        font-size: 18px;
+        color: #666;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      ul li {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+            
+      #services {
+        flex-direction: row-reverse;
+        gap: 30px;
+        margin-top: 20px;
+        align-items: center;
+}
+
+        .services-list {
             display: flex;
             flex-direction: row;
-            gap: 18px;
+           
             align-items: center;
+            gap:40px;
         }
-        h2{
-      font-size: 80px;
-      font-family:  Helvetica;
-      margin-top: 10px;
+        
+        .service {
+            background-color:darkkhaki;
+            padding: 10px;
+            border-radius: 20px;
+            width: 33%;
+            height: 150px;
+        }
+        
+        .service h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        
+        }
+        
+        .service p {
+            font-size: 16px;
+            font-weight: 400;
+            color: whitesmoke;
         }
