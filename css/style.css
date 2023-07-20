@@ -250,7 +250,8 @@ ul {
       }
       #services,
       #contact,
-      #about {
+      #about ,
+      #skills{
             max-width: 80%;
             margin: 0 auto;
             margin-top: 24px;
@@ -294,7 +295,7 @@ ul {
       }
             
       #services {
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: 30px;
         margin-top: 20px;
         align-items: center;
@@ -302,10 +303,10 @@ ul {
 
         .services-list {
             display: flex;
-            flex-direction: row;
-           
+            flex-direction: row; 
             align-items: center;
             gap:40px;
+            margin-top: 20px;
         }
         
         .service {
@@ -313,14 +314,18 @@ ul {
             padding: 10px;
             border-radius: 20px;
             width: 33%;
-            height: 150px;
+            height: 200px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         .service h2 {
             font-size: 24px;
             font-weight: 600;
             color: white;
-        
+            align-items: center;
         }
         
         .service p {
@@ -328,3 +333,43 @@ ul {
             font-weight: 400;
             color: whitesmoke;
         }
+        h2{
+          font-size: 50px;
+        }
+       #cc{
+        font-size: 40px;
+       }
+       #mrm{
+        align-items: center;
+        margin-left:400px;
+       }
+       .skills .progress {
+        height: 60px;
+        display: block;
+        background: none;
+        border-radius: 0;
+      }
+      .skills .progress .skill {
+        padding: 0;
+        margin: 0 0 6px 0;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #242124;
+      }
+      .skills .progress .skill .val {
+        float: right;
+        font-style: normal;
+      }
+      .skills .progress-bar-wrap {
+        background: #dce8f8;
+        height: 10px;
+      }
+      .skills .progress-bar {
+        width: 1px;
+        height: 10px;
+        transition: 0.9s;
+        background-color: #d69254;
+      }
+      
