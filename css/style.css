@@ -28,9 +28,52 @@ ul {
     justify-content: space-between;
     align-items: center;}
     h1{
-        font-family:Lugrasimo ;
+        font-family:Shadows Into Light ;
         font-size: 40px;
+        color:black;
     }
     body{
-        background-color:palegreen ;
+        background-color:cadetblue;
     }
+    a {
+        color: white;
+        font-family: "Roboto";
+        font-size: large;
+    }
+    
+    a:hover{
+        color:aquamarine;
+        text-decoration: underline;
+    }
+    img {
+        border-radius: 100px;
+        border-color: antiquewhite;
+        border-style: dashed;
+    }
+        #hero {
+            max-width: 95%;
+            margin: 0 auto;
+            margin-top: 24px;
+            background-color:lightgray;
+            padding: 20px;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 300px;
+            border-style: groove;
+            border-color: brown;
+       }
+
+        .left{
+            display: flex;
+            flex-direction: row;
+            gap: 18px;
+            align-items: center;
+        }
+        h2{
+      font-size: 80px;
+      font-family:  Helvetica;
+      margin-top: 10px;
+        }
